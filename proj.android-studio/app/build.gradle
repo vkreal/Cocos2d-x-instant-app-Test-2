@@ -1,13 +1,14 @@
 import org.apache.tools.ant.taskdefs.condition.Os
 
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.feature'
 
 android {
+    baseFeature = true
     compileSdkVersion PROP_COMPILE_SDK_VERSION.toInteger()
-    buildToolsVersion "25.0.0"
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
-        applicationId "com.vorun.yaya"
+        //applicationId "com.vorun.yaya"
         minSdkVersion PROP_MIN_SDK_VERSION
         targetSdkVersion PROP_TARGET_SDK_VERSION
         versionCode 1
