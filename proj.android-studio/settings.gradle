@@ -1,2 +1,2 @@
-include ':libcocos2dx', ':app', ':instantapp'
+include ':libcocos2dx', ':app', ':instantapp', ':installed'
 project(':libcocos2dx').projectDir = new File(settingsDir, '../cocos2d/cocos/platform/android/libcocos2dx')
